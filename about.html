@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Story Behind You – About</title>
+  <style>
+    /* Reset & base styles */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      line-height: 1.5;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    /* Container for profile image + story text side-by-side */
+    .profile-story {
+      display: flex;
+      align-items: center;
+      gap: 40px; /* space between image and text */
+      margin-bottom: 60px; /* space before the skills grid below */
+    }
+    .profile-story img {
+      width: 300px; /* or any suitable fixed width */
+      height: auto;
+      border-radius: 8px;
+      display: block;
+      position: relative;
+    }
+    .profile-story .story {
+      flex: 1; /* text takes remaining width */
+    }
+    .profile-story .story p {
+      margin-bottom: 16px;
+    }
+
+    /* Decorative mark fixed relative to image corner */
+    .profile-story .decorative-mark {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      width: 40px;
+      height: 40px;
+      background: #007bff;
+      border-radius: 50%;
+      z-index: 1;
+    }
+    .profile-story .image-wrapper {
+      position: relative;
+      flex-none; /* keep natural width */
+    }
+
+    /* Skills grid section boundary + spacing */
+    .skills-section {
+      padding-top: 40px;
+      border-top: 2px solid #ddd;
+    }
+    .skills-section h2 {
+      font-size: 2rem;
+      margin-bottom: 24px;
+    }
+
+    /* Skills grid: 3 across, uniform tiles, equal gaps */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .skill-tile {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 24px;
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    /* Responsive: stack profile image/text on small screen, and adapt skills grid */
+    @media (max-width: 768px) {
+      .profile-story {
+        flex-direction: column;
+      }
+      .profile-story img {
+        width: 100%;
+        max-width: 300px;
+      }
+      .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 480px) {
+      .skills-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Story Behind You</h1>
+
+  <div class="profile-story">
+    <div class="image-wrapper">
+      <div class="decorative-mark"></div>
+      <img src="your-profile-image.jpg" alt="SPARSHA RAI">
+    </div>
+    <div class="story">
+      <p>
+         Energetic and driven 2nd-year Computer Science student with hands-on experience in web
+ development, embedded systems, and robotics projects. Professional state-level athlete with strong
+ leadership, communication, and social media skills. 
+      </p>
+      <p>
+       Seeking internship opportunities to apply technical
+ skills in robotics/web development while contributing leadership and team-building experience.
+      </p>
+    </div>
+  </div>
+
+  <div class="skills-section">
+    <h2>My Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-tile">HTML &amp; CSS</div>
+      <div class="skill-tile">JavaScript</div>
+      <div class="skill-tile">React</div>
+      <div class="skill-tile">Node.js</div>
+      <div class="skill-tile">UI/UX Design</div>
+      <div class="skill-tile">Project Management</div>
+    </div>
+  </div>
+
+</body>
+</html>

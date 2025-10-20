@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio — Home</title>
+  <style>
+    /* Base resets */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Fixed header */
+    .site-header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    .navbar {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links li a:hover {
+      color: #007BFF;
+    }
+
+    /* Main intro section — ensure content starts exactly after header */
+    .intro-section {
+      padding-top: 100px; /* adjust if header height changes */
+      min-height: calc(100vh - 100px);
+      display: flex;
+      align-items: center;
+      background: #f9f9f9;
+    }
+    .intro-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem;
+      display: flex;
+      gap: 4rem;
+    }
+    .intro-text {
+      flex: 2; /* wider column */
+    }
+    .intro-image {
+      flex: 1; /* narrower column */
+    }
+    .intro-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* Button with hover effect */
+    .btn {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      color: #fff;
+      background: #007BFF;
+      border-radius: 4px;
+      transition: transform 0.2s, background-color 0.2s;
+      margin-top: 1rem;
+    }
+    .btn:hover {
+      background: #0056b3;
+      transform: translateY(-3px);
+    }
+
+    /* Responsive for smaller screens */
+    @media (max-width: 768px) {
+      .intro-content {
+        flex-direction: column;
+        gap: 2rem;
+      }
+      .intro-section {
+        padding-top: 70px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="logo">SPARSHA RAI</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="achievements.html">Achievements</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="intro-section">
+    <div class="intro-content">
+      <div class="intro-text">
+        <h1>Welcome to My Explorer’s Base</h1>
+        <p>Hi there! I’m SPARSHA RAI, a B.Tech Eng. I love exploring new ideas, building cool things, and sharing my journey here. Browse through my work, get inspired, and let’s connect.</p>
+        <a class="btn" href="projects.html">Explore My Work</a>
+      </div>
+      <div class="intro-image">
+        <img src="images/your-image.jpg" alt="Photo of [Your Name]">
+      </div>
+    </div>
+  </main>
+
+</body>
+</html>
+

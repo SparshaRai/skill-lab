@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lab of Creations – Projects</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.5;
+      color: #333;
+      padding: 40px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      text-align: center;
+      font-size: 2.5rem;
+    }
+
+    /* Grid container for project cards */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+    }
+
+    /* Each project box/card */
+    .project-card {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 24px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      /* ensure stacking context for hover shadow */
+      position: relative;
+    }
+
+    /* Hover effect: lift up & deeper shadow */
+    .project-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    /* Inside each card: title, description, link */
+    .project-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 12px;
+      color: #222;
+    }
+    .project-card p {
+      margin-bottom: 16px;
+      color: #555;
+    }
+    .project-card a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #007bff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .project-card a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>The Lab of Creations</h1>
+
+  <div class="projects-grid">
+    <div class="project-card">
+      <h2>Project One</h2>
+      <p>A short description of Project One goes here. Explains what was done and why it matters.</p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="project-card">
+      <h2>Project Two</h2>
+      <p>A short description of Project Two goes here. Highlighting key features and outcomes.</p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <div class="project-card">
+      <h2>Project Three</h2>
+      <p>Description of Project Three. What problem did it solve? What technologies were used?</p>
+      <a href="#">View Project →</a>
+    </div>
+
+    <!-- Add more project-cards as needed -->
+  </div>
+
+</body>
+</html>
